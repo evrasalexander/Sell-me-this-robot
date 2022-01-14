@@ -81,10 +81,11 @@ max-width: 350px;
   padding: 10px;
   max-width: 210px;
   margin-left: 585px;
-  margin-top: 10px;
+  margin-top: 10px; 
+  flex-wrap: wrap;
 }
 .container4{
-  
+  flex-wrap: wrap;
   padding: 10px;
   max-width: 300;
   margin-left: 475px;
@@ -100,42 +101,40 @@ max-width: 350px;
   font-size: 20px;
   background-color: black;
 }
-iframe{
-  margin-left: 20px;
+.iframe1{
+  margin-left: 12px;
   margin-top: 25px;
 }
-.iframe2{
-  margin-left: 200px;
-  margin-top: 25px;
-}
+
 .slide-show-render-full .slide-image {
   
   max-height: 420px;
   max-width: 800px;
- 
+ text-align: center;
   }
   
   .slide-show-render-full .slide-content {
   height: 420px;
   width: 800px;
-  
+  text-align: center;
   }
   
   .slide-show-render .slides {
   height: 500px;
-  
+  text-align: center;
   }
   
   .slide-show-render.slide-show {
   height: 420px;
-  margin: 0 0 100px 60px;
+  text-align: center;
  
   }
   
   .slide-show {
-  width: 800px;
-  
+  width: 1000px;
+  text-align: center;
   }
+
   #heading{
     background-image: url('./Images/-1 (1).png');
     background-size: 100%  cover;
@@ -165,9 +164,7 @@ animation-name: background-color;
 animation-duration: 500ms;
 animation-fill-mode: forwards;
 }
-.container3{
-  flex-wrap: wrap;
-}
+
 
 
 @keyframes background-color{
@@ -176,9 +173,173 @@ background-color:rgba(255, 0, 0, 0.774);
   }
 }
 
-
-  @media screen and (min-width: 280px){
-
+/* between 578 and 1920 apply below styles */
+  @media screen and (min-width:578px) and (max-width: 1920px){
+    .body{
+      background: rgb(9, 9, 15);
+    }
+    
+    .wrapper{
+      width: 100%;
+      max-width: 100%;
+      margin: 0 auto;
+    }
+    nav{
+      background: rgba(255, 0, 0, 0.774);
+    }
+    nav ul{
+      list-style-type: none;
+      padding: 0;
+  
+    }
+    nav a{
+      text-decoration: none;
+      text-align: center;
+      color: rgb(255, 255, 255);
+      display: block;
+      padding: 10px;
+    }
+    nav a:hover{
+      background-color: rgb(255, 160, 160);
+      width: auto;
+      color: white;
+      
+    }
+    .home-page{
+      background-image: url(./Images/Gear-Tesla-Bot.jpg);
+      background-size: 2365px 145%;
+      background-repeat: no-repeat;
+    }
+    .store-page{
+      background-image: url(./Images/sleek-chip.webp);
+      background-size: 100%;
+      background-repeat: no-repeat;
+    }
+    .about-page{
+      background-image: url(./Images/sleek-chip.webp);
+      background-size: 100%;
+      background-repeat: no-repeat;
+    }
+    .contact-page{
+      background-image: url(./Images/sleek-chip.webp);
+      background-size: 100%;
+      background-repeat: no-repeat;
+    }
+   .p{
+     color: rgb(255, 255, 255);
+     margin: 25px;
+     justify-content: left;
+     display: grid;
+     
+   }
+   .p2{
+    color: #ffffff;
+    justify-content: center;
+    font-size: 14px;
+    
+   }
+  .container{
+  columns: 1 2;
+  padding: 10px;
+  margin: 1px;
+  max-width: 350px;
+  
+  }
+  .container2{
+    columns: 1 1;
+    padding: 10px;
+    max-width: 210px;
+    margin-left: 585px;
+    margin-top: 75px;
+  }
+  .container3{
+    columns: 1 1;
+    padding: 10px;
+    max-width: 210px;
+    margin-left: 585px;
+    margin-top: 10px; 
+    flex-wrap: wrap;
+  }
+  .container4{
+    flex-wrap: wrap;
+    padding: 10px;
+    max-width: 300;
+    margin-left: 475px;
+    margin-top: 1px;
+    font-size: 34px;
+  }
+  .container5{
+    
+    padding: 10px;
+    max-width: 300;
+    margin-left: 80px;
+    margin-top: 1px;
+    font-size: 20px;
+    background-color: black;
+  }
+  .iframe1{
+    margin-left: 12px;
+    margin-top: 25px;
+  }
+  
+  .slide-show-render-full .slide-image {
+    
+    max-height: 420px;
+    max-width: 800px;
+   text-align: center;
+    }
+    
+    .slide-show-render-full .slide-content {
+    height: 420px;
+    width: 800px;
+    text-align: center;
+    }
+    
+    .slide-show-render .slides {
+    height: 500px;
+    text-align: center;
+    }
+    
+    .slide-show-render.slide-show {
+    height: 420px;
+    text-align: center;
+   
+    }
+    
+    .slide-show {
+    width: 1000px;
+    text-align: center;
+    }
+  
+    #heading{
+      background-image: url('./Images/-1 (1).png');
+      background-size: 100%  cover;
+      background-repeat: no-repeat;
+      height: 125px;
+      background-position: center;
+  
+    }
+   
+    
+    .carousel-control-prev{
+      background: none
+  }
+    .carousel-control-next{
+    background: none
+  }
+  .email-text-box{
+    margin-left: 590px;
+    margin-bottom: 280px;
+  }
+  .button{
+    border-radius: 6px;
+    margin-left: 645px;
+  }
+  button:hover{
+  animation-name: background-color;
+  animation-duration: 500ms;
+  animation-fill-mode: forwards;
+  }
     nav ul{
       display: flex;
     }
@@ -196,3 +357,20 @@ background-color:rgba(255, 0, 0, 0.774);
   .slide-show-render-full{
     margin-top: 35px
   }};
+
+  @media screen and (min-width: 280px) and (max-width: 577px){
+    nav ul{
+      display: flex;
+    }
+    
+    nav li{
+      flex: 1 2 0;
+    }
+    nav{
+      display: center;
+      justify-content: space-between;
+    }
+    .iframe{
+      
+    }
+  }
