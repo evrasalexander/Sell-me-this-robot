@@ -65,7 +65,7 @@
 .container{
 columns: 1 2;
 padding: 10px;
-margin: 6px;
+margin: 1px;
 max-width: 350px;
 
 }
@@ -75,10 +75,22 @@ max-width: 350px;
   max-width: 210px;
   margin-left: 585px;
   margin-top: 75px;
- 
+}
+.container3{
+  columns: 1 1;
+  padding: 10px;
+  max-width: 210px;
+  margin-left: 585px;
+  margin-top: 10px;
+}
+.container4{
   
-  
-  }
+  padding: 10px;
+  max-width: 300;
+  margin-left: 475px;
+  margin-top: 1px;
+  font-size: 34px;
+}
 iframe{
   margin-left: 20px;
   margin-top: 25px;
@@ -119,7 +131,7 @@ iframe{
     background-image: url('./Images/-1 (1).png');
     background-size: 100%  cover;
     background-repeat: no-repeat;
-    height: 100px;
+    height: 125px;
     background-position: center;
 
   }
